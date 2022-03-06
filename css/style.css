@@ -112,13 +112,12 @@ body {
 }
 
 .card__stat {
-    margin-bottom: .9rem;
-    margin-top: .6rem;
+    margin: 2rem 0;
 }
 
 .card__stat .number {
     color: var(--c__stat-heading);
-    font-size: 3.5rem;
+    font-size: 2rem;
     font-weight: var(--fw__primary-2);
 }
 
@@ -137,10 +136,11 @@ body {
 
     .card {
         display: grid;
-        grid-template-columns: repeat(3, 1fr) 6rem minmax(45%, 1fr);
+        grid-template-columns: repeat(3, minmax(40px, 1fr)) 1rem minmax(350px, 3fr);
         grid-template-rows: repeat(3, auto);
 
         text-align: left;
+        min-width: 700px;
         max-width: 900px;
         padding: 0rem 0rem 0rem 2rem;
     }
@@ -148,22 +148,29 @@ body {
     .card__image-box {
         grid-column: -2 / -1;
         grid-row: 1 / 5;
+
+        background-image: linear-gradient(to right, hsla(277, 72%, 37%, 0.8), hsla(277, 72%, 37%, 0.8)), url("../images/image-header-mobile.jpg");   
+
     }
 
     .card__title {
         grid-column: 1 / 4;
         grid-row: 1;
 
-        margin-top:3rem;
+        font-size: 2.6rem;
+
+        margin-top: 5rem;
     }
 
     .card__body {
         grid-column: 1 / 4;
         grid-row: 2;
+
+        font-size: 1em;
     }
 
     .card__stat {
-        margin-bottom:3rem;
+        margin-bottom: 5rem;
         grid-row: -1;
     }
 
